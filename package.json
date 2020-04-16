@@ -1,6 +1,6 @@
 {
   "name": "itc230",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "itc230 demo application",
   "main": "index.js",
   "directories": {
@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brendenwest/itc230.git"
+    "url": "git+https://github.com/kevinjk27/itc230.git"
   },
-  "author": "Brenden West",
+  "author": "Kevin Kantono",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brendenwest/itc230/issues"
+    "url": "https://github.com/kevinjk27/itc230/issues"
   },
 
 }

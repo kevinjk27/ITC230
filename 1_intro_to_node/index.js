@@ -21,10 +21,12 @@ http.createServer(function(req,res){
   switch(path) {
     case '/': 
       serveStatic(res, '/../public/home.html', 'text/html');
+      const data = require("./data")
+      data.getAll()
       break;
     case '/about':
       res.writeHead(200, {'Content-Type': 'text/plain'});
-      res.end('About');
+      res.end('My name is Kevin. I am currently pursuing AAS in Web Development track.');
       break;
     default:
       res.writeHead(404, {'Content-Type': 'text/plain'});
@@ -33,3 +35,8 @@ http.createServer(function(req,res){
   
 }).listen(process.env.PORT || 3000);
 console.log('after createServer')
+
+
+const data = require("./data")
+
+console.log(data.getAll())
